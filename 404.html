@@ -8,10 +8,10 @@
     <script>
         window.onload = function () {
             const destination = window.location.href;
-            if (window.location.href.includes("ponzifarm.github.io")) {
+            if (window.location.href.includes("blog.ponzifarm.com")) {
                 const redirectLocation = window.location.href.replace(
-                    "ponzifarm.github.io",
-                    "yielda-game.github.io"
+                    "blog.ponzifarm.com",
+                    "blog.yielda.io"
                 );
                 document.getElementById("body").innerHTML = "PonziFarm is now Yielda!<br/><br/>Redirecting to " + redirectLocation + " ...";
                 window.location.href = redirectLocation;
