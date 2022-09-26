@@ -1,5 +1,27 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Redirecting to https://yielda-game.github.io/</title>
-<meta http-equiv="refresh" content="0; URL=https://yielda-game.github.io/">
-<link rel="canonical" href="https://yielda-game.github.io/">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Error 404 :(</title>
+
+    <script>
+        window.onload = function () {
+            const destination = window.location.href;
+            if (window.location.href.includes("ponzifarm.github.io")) {
+                const redirectLocation = window.location.href.replace(
+                    "ponzifarm.github.io",
+                    "yielda-game.github.io"
+                );
+                document.getElementById("body").innerHTML = "PonziFarm is now Yielda!<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
+        }
+    </script>
+</head>
+
+<body id="body" style="text-align: center">
+    Page not found
+</body>
+
+</html>
